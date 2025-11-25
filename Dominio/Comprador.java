@@ -9,8 +9,7 @@ public class Comprador {
     private String telefono;
     public Comprador() {
     }
-    public Comprador(String idComprador, String nombres, String apellidos,
-                     String cedula, String correo, String telefono) {
+    public Comprador(String idComprador, String nombres, String apellidos, String cedula, String correo, String telefono) {
         this.idComprador = idComprador;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -59,3 +58,4 @@ public class Comprador {
                 ", telefono= " + telefono + "";
     }
 }
+
