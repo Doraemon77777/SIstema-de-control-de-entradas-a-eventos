@@ -24,4 +24,5 @@ Este proyecto surge porque el proceso actual de la ASO es manual y genera múlti
 4. Falta de seguridad en el manejo de datos personales.
 5. Duplicidad y falsificación de boletos, al no existir códigos únicos ni control digital.
 6. Aumento de la demanda, lo que hace insostenible el método manual.
+
 Por estas razones, la automatización es necesaria para asegurar un proceso confiable, rápido, trazable y escalable, capaz de soportar el crecimiento de los eventos y mejorar significativamente la organización de la ASO.
