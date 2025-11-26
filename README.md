@@ -15,7 +15,7 @@ Mejorar la operatividad del personal mediante una interfaz simple, intuitiva y a
 Garantizar trazabilidad completa de cada registro, venta, incidencia y comprobante.
 Evitar duplicación o falsificación de boletos, mediante tokens/UUID y verificación en el ingreso.
 
-Por qué lo estamos haciendo:
+# Por qué lo estamos haciendo:
 Este proyecto surge porque el proceso actual de la ASO es manual y genera múltiples problemas:
 
 Pérdida frecuente de información (hojas extraviadas, archivos sin respaldo).
