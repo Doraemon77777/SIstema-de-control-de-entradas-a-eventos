@@ -4,7 +4,7 @@ Nuestro proyecto consiste en el desarrollo de un Sistema de Control de Entradas 
 Este sistema digitaliza y automatiza todo el proceso relacionado con la venta de boletos, registro de compradores, control de acceso, gestión de eventos, generación de comprobantes y reportes, reemplazando los actuales métodos manuales basados en papel y archivos dispersos.
 La plataforma centraliza la información, valida los datos, genera códigos únicos para cada entrada, protege los datos personales mediante roles y autenticación, y permite a los organizadores visualizar y administrar en tiempo real las ventas, eventos y asistencia.
 
-# Lo que queremos lograr:
+## Lo que queremos lograr:
 Mediante este sistema buscamos:
 
 Eliminar los errores comunes del proceso manual (mala letra, registros duplicados, pérdida de hojas, errores de digitación).
