@@ -15,7 +15,7 @@ Mediante este sistema buscamos:
 6. Garantizar trazabilidad completa de cada registro, venta, incidencia y comprobante.
 7. Evitar duplicación o falsificación de boletos, mediante tokens/UUID y verificación en el ingreso.
 
-# Por qué lo estamos haciendo:
+### Por qué lo estamos haciendo:
 Este proyecto surge porque el proceso actual de la ASO es manual y genera múltiples problemas:
 
 1. Pérdida frecuente de información (hojas extraviadas, archivos sin respaldo).
