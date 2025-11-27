@@ -1,5 +1,5 @@
 # Sistema de control de entradas a eventos
-![Uploading 17641993437676164657420469627004.jpg…]()
+![17642016300951831180061668763031](https://github.com/user-attachments/assets/9b121015-50ac-418a-80dc-669b7cf5cec4)
 
 Nuestro proyecto consiste en el desarrollo de un Sistema de Control de Entradas a Eventos para la Asociación de Estudiantes (ASO) de la UCE.
 Este sistema digitaliza y automatiza todo el proceso relacionado con la venta de boletos, registro de compradores, control de acceso, gestión de eventos, generación de comprobantes y reportes, reemplazando los actuales métodos manuales basados en papel y archivos dispersos.
