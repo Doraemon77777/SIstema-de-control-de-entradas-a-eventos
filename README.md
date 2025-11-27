@@ -28,5 +28,5 @@ Este proyecto surge porque el proceso actual de la ASO es manual y genera múlti
 
 Por estas razones, la automatización es necesaria para asegurar un proceso confiable, rápido, trazable y escalable, capaz de soportar el crecimiento de los eventos y mejorar significativamente la organización de la ASO.
 
-<img width="527" height="490" alt="image" src="https://github.com/user-attachments/assets/350aae83-6203-4b1c-b73f-d0c97c182aed" />
-<img width="527" height="490" alt="image" src="https://github.com/user-attachments/assets/0b7c4e24-64e4-454b-ab4c-f86536b4a9ad" />
+<img width="301" height="387" alt="image" src="https://github.com/user-attachments/assets/350aae83-6203-4b1c-b73f-d0c97c182aed" />
+<img width="301" height="387" alt="image" src="https://github.com/user-attachments/assets/0b7c4e24-64e4-454b-ab4c-f86536b4a9ad" />
