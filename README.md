@@ -1,4 +1,5 @@
-# Sistema de control de entradas a eventos <img src="[51429c03165f75cf4d8a9b3d4965bf22](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fi-love-dora-cake--620441286180754806%2F&psig=AOvVaw0l8OaA8VKVU_PY819_CnIb&ust=1764520283856000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIiy9rjkl5EDFQAAAAAdAAAAABAV)" alt="Un gif divertido">
+# Sistema de control de entradas a eventos <img src="[mi-gif.gif](https://github.com/user-attachments/assets/96ccff1b-e12f-4c3b-a2e8-b32a18d5cff8)" alt="gif" width="300">
+![51429c03165f75cf4d8a9b3d4965bf22](https://github.com/user-attachments/assets/96ccff1b-e12f-4c3b-a2e8-b32a18d5cff8)
 
 
 Nuestro proyecto consiste en el desarrollo de un Sistema de Control de Entradas a Eventos para la Asociación de Estudiantes (ASO) de la UCE.
