@@ -1,4 +1,4 @@
-# Sistema de control de entradas a eventos <img src="[mi-gif.gif](https://github.com/user-attachments/assets/96ccff1b-e12f-4c3b-a2e8-b32a18d5cff8)" alt="gif" width="300">
+# Sistema de control de entradas a eventos <img src="https://github.com/user-attachments/assets/96ccff1b-e12f-4c3b-a2e8-b32a18d5cff8" alt="gif" width="200">
 ![51429c03165f75cf4d8a9b3d4965bf22](https://github.com/user-attachments/assets/96ccff1b-e12f-4c3b-a2e8-b32a18d5cff8)
 
 
