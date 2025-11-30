@@ -11,11 +11,11 @@ public class GestionarUsuario {
 
         while (!salir) {
             System.out.println("\n=== Gestionar Usuario ===");
-            System.out.println("1. Gestionar Ingreso");
-            System.out.println("2. Crear Usuario");
-            System.out.println("3. Eliminar Usuario");
-            System.out.println("4. Actualizar Usuario");
-            System.out.println("5. Consultar Usuario");
+            System.out.println("1. Gestionar Ingreso HU0.0");
+            System.out.println("2. Crear Usuario - HU0.1");
+            System.out.println("3. Eliminar Usuario - HU0.2");
+            System.out.println("4. Actualizar Usuario - HU0.3");
+            System.out.println("5. Consultar Usuario - HU0.4");
             System.out.println("6. Salir");
             System.out.print("\n Seleccione una opción: ");
 

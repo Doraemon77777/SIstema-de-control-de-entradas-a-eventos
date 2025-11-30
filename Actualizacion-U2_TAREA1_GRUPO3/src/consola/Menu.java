@@ -10,10 +10,10 @@ public class Menu {
 
         while (!salir) {
             System.out.println("=== MENU PRINCIPAL ===");
-            System.out.println("1. Gestionar Usuarios");
-            System.out.println("2. Gestionar Eventos");
-            System.out.println("3. Gestionar Ventas");
-            System.out.println("4. Gestionar Incidencias");
+            System.out.println("1. Gestionar Usuarios - HU0");
+            System.out.println("2. Gestionar Eventos - HU1");
+            System.out.println("3. Gestionar Ventas - HU2");
+            System.out.println("4. Gestionar Incidencias - HU3");
             System.out.println("5. Salir");
             System.out.println(" ");
             System.out.print("Seleccione una opción: ");

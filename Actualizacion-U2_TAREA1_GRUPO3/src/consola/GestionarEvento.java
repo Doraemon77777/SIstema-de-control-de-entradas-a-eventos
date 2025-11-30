@@ -11,10 +11,10 @@ public class GestionarEvento {
 
         while (!salir) {
             System.out.println("\n=== Gestionar Evento ===");
-            System.out.println("1. Crear Evento");
-            System.out.println("2. Actualizar Evento");
-            System.out.println("3. Eliminar Evento");
-            System.out.println("4. Consultar Evento");
+            System.out.println("1. Crear Evento - HU1.0");
+            System.out.println("2. Actualizar Evento - HU1.2");
+            System.out.println("3. Eliminar Evento - HU1.3");
+            System.out.println("4. Consultar Evento - HU1.4");
             System.out.println("5. Salir");
             System.out.print("\n Seleccione una opción: ");
 

@@ -11,11 +11,11 @@ public class GestionarVenta {
 
         while (!salir) {
             System.out.println("\n=== Gestionar Venta ===");
-            System.out.println("1. Registrar venta");
-            System.out.println("2. Consultar venta");
-            System.out.println("3. Actualizar venta");
-            System.out.println("4. Anular venta");
-            System.out.println("5. Gestionar Comprobante");
+            System.out.println("1. Crear venta - HU2.0");
+            System.out.println("2. Consultar venta - HU2.1");
+            System.out.println("3. Actualizar venta - HU2.2");
+            System.out.println("4. Eliminar venta - HU2.3");
+            System.out.println("5. Gestionar Comprobante - HU2.4");
             System.out.println("6. Salir");
             System.out.print("\n Seleccione una opción: ");
 
