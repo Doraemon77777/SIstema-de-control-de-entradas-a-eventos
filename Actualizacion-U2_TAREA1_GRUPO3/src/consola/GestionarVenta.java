@@ -23,7 +23,7 @@ public class GestionarVenta {
 
             switch (opcion) {
                 case "1":
-                    new RegistrarVenta().mostrarGV();
+                    new CrearVenta().mostrarGV();
                     break;
                 case "2":
                     new ConsultarVenta().mostrarGV();
