@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+
 public class CrearVenta {
     public void mostrarGV(){
     }
@@ -16,47 +17,42 @@ public class CrearVenta {
         System.out.print("Número de Compra: ");
         String numCompra = sc.nextLine();
 
-        System.out.print("Usuario (ID o Correo): ");
-        String usuario = sc.nextLine();
+        System.out.print("Comprador correo: ");
+        String correo = sc.nextLine();
 
-        // Fecha asignada automáticamente por el sistema (Requerimiento)
+        System.out.print("Nombre del comprador: ");
+        String nombreComprador = sc.nextLine();
+
+        // Fecha asignada automáticamente por el sistema
         LocalDateTime fechaActual = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String fechaCompra = fechaActual.format(formatter);
         System.out.println("Fecha de Compra (Sistema): " + fechaCompra);
 
-        System.out.print("Tipo de Boleto (General/VIP) [Opcional]: ");
-        String tipoBoleto = sc.nextLine();
-
         System.out.print("Cantidad de Boletos: ");
         String cantidadStr = sc.nextLine();
 
-        System.out.print("Confirmación de términos (Acepto/No): ");
-        String confirmacion = sc.nextLine();
+        System.out.print("Tipo de Boleto (General/VIP) [Opcional]: ");
+        String tipoBoleto = sc.nextLine();
 
 
         // --- 2. Validaciones ---
 
-        // A) Validación: No ha iniciado sesión (Simulada)
-        // Si no se ingresa un usuario válido, simulamos que no hay sesión activa.
-        if (isNullOrEmpty(usuario)) {
-            System.out.println("ERROR: No ha iniciado sesión. El sistema redirige al Login...");
+        // A) Validación: Campos Vacíos (Obligatorios)
+        // Se valida Número, Correo, Nombre y Cantidad. Tipo de boleto es Opcional.
+        if (isNullOrEmpty(numCompra) || isNullOrEmpty(correo) ||
+                isNullOrEmpty(nombreComprador) || isNullOrEmpty(cantidadStr)) {
+            System.out.println("ERROR: Ingrese todos los campos obligatorios (Número, Correo, Nombre, Cantidad).");
             return;
         }
 
-        // B) Validación: Campos Vacíos (Generales)
-        if (isNullOrEmpty(numCompra) || isNullOrEmpty(cantidadStr) || isNullOrEmpty(confirmacion)) {
-            System.out.println("ERROR: Ingrese todos los campos obligatorios.");
+        // B) Validación: Correo del Comprador (Debe contener '@')
+        if (!correo.contains("@")) {
+            System.out.println("ERROR: El correo ingresado no es válido (falta '@').");
             return;
         }
 
-        // C) Validación: Confirmación de Términos
-        if (!confirmacion.equalsIgnoreCase("Acepto")) {
-            System.out.println("ERROR: Debe aceptar los términos y políticas para proceder.");
-            return;
-        }
-
-        // D) Validación: Stock y Cantidad
+        // C) Validación: Stock y Cantidad
         int cantidad = 0;
         int stockDisponible = 50; // SIMULACIÓN: Stock hardcodeado para pruebas
 
@@ -68,7 +64,7 @@ public class CrearVenta {
                 return;
             }
 
-            // Validación específica: "La cantidad supera el stock"
+            // Validación: "La cantidad supera el stock"
             if (cantidad > stockDisponible) {
                 System.out.println("ERROR: Boletos insuficientes. Stock disponible: " + stockDisponible);
                 return;
@@ -79,23 +75,13 @@ public class CrearVenta {
             return;
         }
 
-        // E) Validación: El pago no es aprobado (Simulación Interactiva)
-        // Preguntamos al tester si quiere simular un pago exitoso o fallido
-        System.out.print(">> Simulador Pasarela de Pago: ¿Aprobar pago? (Si/No): ");
-        String estadoPago = sc.nextLine();
-
-        if (!estadoPago.equalsIgnoreCase("Si")) {
-            System.out.println("ERROR: El pago no fue aprobado por la entidad financiera. Operación cancelada.");
-            return; // No descuenta boletos, sale del método.
-        }
-
         // --- 3. Éxito ---
-        // Si llega aquí, todo es válido.
+        // Si llega aquí, pasó todas las validaciones lógicas.
         System.out.println("Venta registrada exitosamente.");
-        System.out.println("Resumen: Compra #" + numCompra + " | Usuario: " + usuario + " | Total Boletos: " + cantidad);
+        System.out.println("Resumen: Compra #" + numCompra + " | Comprador: " + nombreComprador + " (" + correo + ") | Boletos: " + cantidad);
     }
 
-    // Helper (Estilo del equipo)
+    // Helper
     private boolean isNullOrEmpty(String s) {
         return s == null || s.trim().isEmpty();
     }
