@@ -9,7 +9,7 @@ public class CrearVenta {
     }
 
     public void crearVenta() {
-        System.out.println("== REGISTRAR VENTA (CREAR) ==");
+        System.out.println("== CREAR VENTA ==");
         Scanner sc = new Scanner(System.in);
 
         // --- 1. Recolección de Datos ---
