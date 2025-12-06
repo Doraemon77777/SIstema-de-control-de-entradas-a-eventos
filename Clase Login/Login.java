@@ -1,5 +1,4 @@
 package consola;
-
 import java.util.Scanner;
 
 public class Login {
@@ -26,4 +25,5 @@ public class Login {
         }
     }
 }
+
 
