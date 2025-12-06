@@ -9,9 +9,9 @@ public class Login {
 
     public void acceder() {
         System.out.print("Ingrese  el usuario: ");
-        user = sc.nextLine();
+        usuario = sc.nextLine();
         System.out.print("Ingrese la contraseña: ");
-        pass = sc.nextLine();
+        contrasena = sc.nextLine();
         try {
             if(user.equals("ASOCIVIL") && pass.equals("tengohambre12")) {
                 Menu m = new Menu();
@@ -26,3 +26,4 @@ public class Login {
         }
     }
 }
+
