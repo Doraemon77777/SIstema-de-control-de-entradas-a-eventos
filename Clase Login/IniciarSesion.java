@@ -12,7 +12,7 @@ public class Login {
         System.out.print("Ingrese la contraseña: ");
         contrasena = sc.nextLine();
         try {
-            if(user.equals("ASOCIVIL") && pass.equals("tengohambre12")) {
+            if(usuario.equals("ASOCIVIL") && contrasena.equals("tengohambre12")) {
                 Menu m = new Menu();
                 m.mostrarMenu();
             } else {
@@ -25,6 +25,7 @@ public class Login {
         }
     }
 }
+
 
 
 
