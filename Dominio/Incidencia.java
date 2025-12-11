@@ -5,10 +5,15 @@ public class Incidencia {
     private String tipoIncidencia;
     private String descripcion;
     private String fechaRegistro;
-    private String estado;
-    private String referencia;
     private String prioridad;
+
     public Incidencia() {
+        this.idIncidencia="Sin id";
+        this.idUsuario="Si id Usuario";
+        this.tipoIncidencia= "Sin registros";
+        this.descripcion="Sin descripcion";
+        this.fechaRegistro="Sin fecha";
+        this.prioridad="prioridad";
     }
 
     public Incidencia(String idIncidencia, String idUsuario, String tipoIncidencia,String descripcion, String fechaRegistro, String estado,String referencia, String prioridad)
@@ -18,8 +23,6 @@ public class Incidencia {
         this.tipoIncidencia = tipoIncidencia;
         this.descripcion = descripcion;
         this.fechaRegistro = fechaRegistro;
-        this.estado = estado;
-        this.referencia = referencia;
         this.prioridad = prioridad;
     }
 
@@ -54,18 +57,6 @@ public class Incidencia {
     public void setFechaRegistro(String fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
-    public String getEstado() {
-        return estado;
-    }
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-    public String getReferencia() {
-        return referencia;
-    }
-    public void setReferencia(String referencia) {
-        this.referencia = referencia;
-    }
     public String getPrioridad() {
         return prioridad;
     }
@@ -76,7 +67,6 @@ public class Incidencia {
     public String toString() {
         return "Incidencia: idIncidencia=" + idIncidencia + ", idUsuario=" + idUsuario +
                 ", tipoIncidencia=" + tipoIncidencia + ", descripcion=" + descripcion +
-                ", fechaRegistro=" + fechaRegistro + ", estado=" + estado +
-                ", referencia=" + referencia + ", prioridad=" + prioridad + "";
+                ", fechaRegistro=" + fechaRegistro + ", estado=" + ", prioridad=" + prioridad + "";
     }
 }

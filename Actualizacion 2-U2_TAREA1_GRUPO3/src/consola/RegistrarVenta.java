@@ -1,4 +1,4 @@
-package consola;
+/*package consola;
 
 public class RegistrarVenta {
     public void mostrarGV(){
@@ -26,3 +26,5 @@ public class RegistrarVenta {
             }while(op != 3);
     }
 }
+
+ */

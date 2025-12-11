@@ -9,6 +9,12 @@ public class Comprador {
     private String telefono;
 
     public Comprador() {
+        this.idComprador="Sin id";
+        this.nombres="Sin nombres";
+        this.apellidos="Sin apellidos";
+        this.cedula="Sin cedula";
+        this.correo="Sin correo";
+        this.telefono="Sin telefono";
     }
     public Comprador(String idComprador, String nombres, String apellidos, String cedula, String correo, String telefono) {
         this.idComprador = idComprador;

@@ -4,7 +4,12 @@ public class IncidenciaConElSistema extends Incidencia {
     private String moduloAfectado;
     private String detalleTecnico;
 
-    public IncidenciaConElSistema() { super(); }
+    public IncidenciaConElSistema() {
+        super();
+        this.idIncidenciaSistema="Sin id Sistema";
+        this.moduloAfectado="Sin datos";
+        this.detalleTecnico="Sin detalles tecnico";
+    }
 
     public IncidenciaConElSistema(String idIncidencia, String idUsuario, String tipoIncidencia,String descripcion, String fechaRegistro, String estado,String referencia, String prioridad,
                                   String idIncidenciaSistema, String moduloAfectado, String detalleTecnico)

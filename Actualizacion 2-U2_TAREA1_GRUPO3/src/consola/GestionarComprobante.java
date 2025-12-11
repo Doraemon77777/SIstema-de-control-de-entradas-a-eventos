@@ -1,4 +1,4 @@
-package consola;
+/*package consola;
 import java.util.Scanner;
 
 public class GestionarComprobante {
@@ -36,3 +36,5 @@ public class GestionarComprobante {
         }
     }
 }
+
+ */

@@ -21,7 +21,8 @@ public class Empresa {
             this.direccion="Sin direccion";
             this.telefono="Sin telefono";
             this.correo="Sin correo";
-
+            this.numEvento = 0;
+            this.numUsuario = 0;
             this.eventos = new Evento[3];
             this.usuarios = new Usuario[3];
         }
@@ -45,7 +46,7 @@ public class Empresa {
         //CRUD USUARIOS
 
         //Nuevo Usuario
-        public void nuevo(Usuario usuario) {
+        public void nuevoUsuario(Usuario usuario) {
             if (usuario == null){
                 return;}
             if(numUsuario >= this.usuarios.length){
@@ -228,8 +229,6 @@ public class Empresa {
                     ", telefono=" + telefono+ ", correo=" + correo+ ", eventos=" + Arrays.toString(eventos)+
                     "";
         }
-
-
 
     }
 

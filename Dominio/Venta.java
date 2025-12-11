@@ -14,17 +14,32 @@ public class Venta {
     private String estadoVenta;
     private double total;
     private String uuidBoleto;
-    private Entradas[] entradasVendidas;
     private Comprobante comprobante;
+    private Entrada[] entradaVendidas;
+    private Comprador[] compradores;
+    private int numComprador;
 
     public Venta() {
-        this.entradasVendidas = new Entradas[0];
+        this.idVenta="Sin id";
+        this.idUsuario="Sin id Usuario";
+        this.idEvento="Sin id evento";
+        this.comprador=null; // 1:1 con Comprador
+        this.fechaVenta="Sin fecha";
+        this.cantidadBoletos=0;
+        this.tipoEntrada="Sin tipo entrada";
+        this.metodoPago="Sin metodo de pago";
+        this.estadoVenta="Sin estado";
+        this.total=0.0;
+        this.comprobante=null;
+        this.entradaVendidas = new Entrada[0];
+        this.compradores= new Comprador[3];
+        this.numComprador=0;
         this.uuidBoleto = UUID.randomUUID().toString();
     }
     public Venta(String idVenta, String idUsuario, String idEvento, Comprador comprador,
                  String fechaVenta, int cantidadBoletos, String tipoEntrada,
                  String metodoPago, String estadoVenta, double total,
-                 Entradas[] entradasVendidas, Comprobante comprobante) {
+                 Entrada[] entradaVendidas, Comprobante comprobante) {
         this.idVenta = idVenta;
         this.idUsuario = idUsuario;
         this.idEvento = idEvento;
@@ -35,10 +50,77 @@ public class Venta {
         this.metodoPago = metodoPago;
         this.estadoVenta = estadoVenta;
         this.total = total;
-        this.entradasVendidas = entradasVendidas == null ? new Entradas[0] : entradasVendidas;
+        this.entradaVendidas = entradaVendidas == null ? new Entrada[0] : entradaVendidas;
         this.comprobante = comprobante;
         this.uuidBoleto = UUID.randomUUID().toString();
+        this.entradaVendidas = new Entrada[0];
+        this.compradores= new Comprador[3];
+        this.numComprador=0;
     }
+
+    //CRUD COMPRADORES
+
+    //Nuevo Comprador
+    public void nuevoComprador(Comprador comprador) {
+        if (comprador == null){
+            return;}
+        if(numComprador >= this.compradores.length){
+            Comprador[] aux = new Comprador[compradores.length + 1];
+            System.arraycopy(compradores, 0, aux, 0, compradores.length);
+            compradores = aux;
+        }
+        compradores[numComprador] = comprador;
+        numComprador++;
+    }
+
+    //Consultar Comprador
+    public String consultarCompradores() {
+        String respuesta = ""; //iniamos un String vacio
+        for (int i = 0; i < numComprador; i++) {
+            respuesta += "[" + i + "] " + compradores[i] + "\r\n"; //imprimos la posicion y el contenido de esa posicion
+        }
+        return respuesta;
+    }
+
+    //Buscar Comprador
+    public Comprador buscarComprador(int posicion) {
+        if (posicion < 0 || posicion >= numComprador){
+            return null;
+        }
+        return compradores[posicion];
+    }
+
+    //Editar Comprador
+    public boolean editarComprador(int posicion, Comprador comprador) {
+        if (posicion < 0 || posicion >= compradores.length || comprador == null) {
+            return false;
+        }
+        compradores[posicion] = comprador;
+        return true;
+    }
+
+    //Eliminar Comprador
+
+    public boolean eliminarComprador(int posicion) {
+        if (posicion < 0 || posicion >= compradores.length) {
+            return false;
+        }
+
+        Comprador[] nuevo = new Comprador [compradores.length - 1];
+
+        if(posicion == 0){
+            System.arraycopy(compradores, 1, nuevo, 0, compradores.length - 1);
+        }else if(posicion == compradores.length - 1){
+            System.arraycopy(compradores, 0, nuevo, 0, compradores.length - 1);
+        }else{
+            System.arraycopy(compradores, 0, nuevo, 0, posicion);
+            System.arraycopy(compradores, posicion + 1, nuevo, posicion, numComprador - posicion - 1);
+        }
+        compradores = nuevo;
+        numComprador--;
+        return true;
+    }
+
 
     public String getIdVenta() {
 
@@ -104,11 +186,11 @@ public class Venta {
     public String getUuidBoleto() {
         return uuidBoleto;
     }
-    public Entradas[] getEntradasVendidas() {
-        return entradasVendidas;
+    public Entrada[] getEntradasVendidas() {
+        return entradaVendidas;
     }
-    public void setEntradasVendidas(Entradas[] entradasVendidas) {
-        this.entradasVendidas = entradasVendidas;
+    public void setEntradasVendidas(Entrada[] entradaVendidas) {
+        this.entradaVendidas = entradaVendidas;
     }
     public Comprobante getComprobante() {
         return comprobante;
@@ -122,7 +204,7 @@ public class Venta {
                 ", fechaVenta= " + fechaVenta + ", cantidadBoletos=" + cantidadBoletos +
                 ", tipoEntrada=" + tipoEntrada + ", metodoPago=" + metodoPago +
                 ", estadoVenta=" + estadoVenta + ", total=" + total + ", uuidBoleto=" + uuidBoleto +
-                ", entradasVendidas=" + Arrays.toString(entradasVendidas) +
+                ", entradasVendidas=" + Arrays.toString(entradaVendidas) +
                 ", comprobante=" + (comprobante != null ? comprobante.getIdComprobante() : "null") + " ";
     }
 

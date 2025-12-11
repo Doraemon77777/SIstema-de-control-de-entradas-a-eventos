@@ -10,16 +10,23 @@ public class Evento {
         private String ubicacion;
         private String estado;
         private String descripcion;
-        private Entradas[] entradas;
         private Empresa empresa;
-        private Usuario usuario;
+
 
         public Evento() {
-            this.entradas = new Entradas[0];
+            this.nombres="Sin nombres";
+            this.fecha= "Sin fecha";
+            this.hora="Sin hora";
+            this.aforoMaximo=0;
+            this.ubicacion="Sin Ubicación";
+            this.estado="Sin estado";
+            this.descripcion="Sin Descripcion";
+            this.empresa = null;
+
         }
 
         public Evento(String idEvento, String nombres, String fecha, String hora, int aforoMaximo, String ubicacion, String estado, String descripcion,
-                      Entradas[] entradas, Empresa empresa, Usuario usuario) {
+                      Entrada[] entradas, Empresa empresa) {
             this.idEvento = idEvento;
             this.nombres = nombres;
             this.fecha = fecha;
@@ -28,10 +35,13 @@ public class Evento {
             this.ubicacion = ubicacion;
             this.estado = estado;
             this.descripcion = descripcion;
-            this.entradas = entradas == null ? new Entradas[0] : entradas;
             this.empresa = empresa;
-            this.usuario = usuario;
+
         }
+
+
+
+
         public String getIdEvento() {
             return idEvento;
         }
@@ -90,14 +100,6 @@ public class Evento {
         this.descripcion = descripcion;
     }
 
-    public Entradas[] getEntradas() {
-        return entradas;
-    }
-
-    public void setEntradas(Entradas[] entradas) {
-        this.entradas = entradas;
-    }
-
     public Empresa getEmpresa() {
         return empresa;
     }
@@ -106,19 +108,11 @@ public class Evento {
         this.empresa = empresa;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
     public String toString() {
             return "Evento: idEvento=" + idEvento + ", nombres=" + nombres + ", fecha= " + fecha +
                     ", hora=" + hora + ", aforoMaximo=" + aforoMaximo + ", ubicacion=" + ubicacion +
                     ", estado=" + estado + ", descripcion=" + descripcion +
-                    ", entradas=" + Arrays.toString(entradas) +
-                    ", empresa=" + (empresa != null ? empresa.getNombre() : "null") +
-                    ", usuario=" + (usuario != null ? usuario.getNombres() : "null") + "";
+                    ", empresa=" + (empresa != null ? empresa.getNombre() : "null");
         }
 }
