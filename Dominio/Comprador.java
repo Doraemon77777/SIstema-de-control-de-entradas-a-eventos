@@ -7,6 +7,7 @@ public class Comprador {
     private String cedula;
     private String correo;
     private String telefono;
+
     public Comprador() {
     }
     public Comprador(String idComprador, String nombres, String apellidos, String cedula, String correo, String telefono) {

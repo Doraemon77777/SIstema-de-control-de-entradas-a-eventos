@@ -49,7 +49,7 @@ public class ConsultarEvento {
         exportarPDF();
     }
 
-    // Método para simular el sub-proceso HU1.3.0.0
+    // Metodo para simular el sub-proceso HU1.3.0.0
     private void exportarPDF() {
         System.out.println("... [HU1.3.0.0] Exportando documento final ...");
         System.out.println("SUCCESS: Reporte generado y exportado a PDF correctamente. Entregado al usuario.");
