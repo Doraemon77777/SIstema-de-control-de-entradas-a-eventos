@@ -6,7 +6,7 @@ La plataforma centraliza la información, valida los datos, genera códigos úni
 
 <img src="https://github.com/user-attachments/assets/96ccff1b-e12f-4c3b-a2e8-b32a18d5cff8" alt="gif" width="175" height="145">
 
-## Lo que queremos lograr:
+## Lo que queremos lograr: 
 Mediante este sistema buscamos:
 
 1. Eliminar los errores comunes del proceso manual (mala letra, registros duplicados, pérdida de hojas, errores de digitación).
